@@ -1,0 +1,14 @@
+{
+  "manifest_version" : 2,
+
+  "name" : "DocLink",
+  "description" : "Adds extra inter-page links to the MSDN Kinect V2 Documentation",
+  "version" : "0.1",
+
+  "content_scripts" : [
+    {
+      "matches" : ["https://msdn.microsoft.com/en-us/library/microsoft.kinect.kinect.*"],
+      "js" : ["jquery-2.1.4.min.js", "content.js"]
+    }
+  ]
+}
