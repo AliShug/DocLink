@@ -2,7 +2,8 @@
   "manifest_version" : 2,
 
   "name" : "DocLink",
-  "description" : "Adds extra inter-page links to the MSDN Kinect V2 Documentation",
+  "description" : "Adds extra inter-page links to the MSDN Kinect V2 C++ Documentation.
+                    GitHub page at https://github.com/AliShug/DocLink",
   "version" : "0.1",
 
   "content_scripts" : [
@@ -10,5 +11,11 @@
       "matches" : ["https://msdn.microsoft.com/en-us/library/microsoft.kinect.kinect.*"],
       "js" : ["jquery-2.1.4.min.js", "content.js"]
     }
-  ]
+  ],
+
+  "icons" : {
+    "16" : "icon16.png",
+    "48" : "icon48.png",
+    "128" : "ison128.png"
+  }
 }
